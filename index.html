@@ -91,7 +91,7 @@
 </head>
 <body>
     <header class="header">
-        <h1>多喝热水</h1>
+        <h1 class="logo">多喝热水</h1>
         <nav class="nav">
             <a href="/">首页</a>
         </nav>
@@ -154,7 +154,7 @@
             </a>
 
         </div>
-        <p class="copyright">©2024 多喝热水</p>
+        <p class="copyright">©2026 多喝热水</p>
     </footer>
 
     <script>
@@ -169,7 +169,12 @@
                     <span>粤公网安备 44030602007692号</span>
                     </a>
                 `;
-            }
+            } else if (hostname.includes('foreverforever.cn')) {
+                document.querySelector('.beian').innerHTML = `
+                <a href="https://beian.miit.gov.cn/">粤ICP备2023047964号-3</a>
+                `;
+                document.querySelector('.logo').innerText = '氛围编程';
+                document.querySelector('.copyright').innerText = '©2026 氛围编程 版权所有';        }
         }
 
     </script>
