@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,9 +87,9 @@
         .copyright {
             margin: 12px 0;
         }
-
     </style>
 </head>
+
 <body>
     <header class="header">
         <h1 class="logo">多喝热水</h1>
@@ -144,13 +145,10 @@
 
             <a href="https://beian.miit.gov.cn/">粤ICP备2023047964号-1</a>
 
-            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030602007628">
-                <img
-                    src="/assets/images/beian_icon.png"
-                    alt="gongan beian"
-                />
+            <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44030002010822" rel="noreferrer" target="_blank">
+                <img src="/assets/images/beian_icon.png" alt="gongan beian" />
                 &nbsp;
-                <span>粤公网安备 44030602007628号</span>
+                <span>粤公网安备44030002010822号</span>
             </a>
 
         </div>
@@ -164,20 +162,26 @@
             if (hostname.includes('drinkmorewarmwater')) {
                 document.querySelector('.beian').innerHTML = `
                 <a href="https://beian.miit.gov.cn/">粤ICP备2023047964号-2</a>
-                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030602007692">
+                <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44030002010821" rel="noreferrer" target="_blank">
                     <img src="/assets/images/beian_icon.png" alt="gongan beian" />&nbsp;
-                    <span>粤公网安备 44030602007692号</span>
-                    </a>
+                    <span>粤公网安备44030002010821号</span>
+                </a>
                 `;
             } else if (hostname.includes('foreverforever.cn')) {
                 document.querySelector('.beian').innerHTML = `
                 <a href="https://beian.miit.gov.cn/">粤ICP备2023047964号-3</a>
+                <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44030002010909" rel="noreferrer" target="_blank">
+                    <img src="/assets/images/beian_icon.png" alt="gongan beian" />&nbsp;
+                    <span>粤公网安备44030002010909号</span>
+                </a>
                 `;
                 document.querySelector('.logo').innerText = '氛围编程';
-                document.querySelector('.copyright').innerText = '©2026 氛围编程 版权所有';        }
+                document.querySelector('.copyright').innerText = '©2026 氛围编程 版权所有';
+            }
         }
 
     </script>
-    
+
 </body>
+
 </html>
